@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 1024 1024"
+   class="icon"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="botikin.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.5029297"
+     inkscape:cx="249.53786"
+     inkscape:cy="537.84853"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 558.4,511.9 v -31.2 c 0,-4.7 -3.80183,-8.63116 -8.5,-8.5 l -45.58338,1.27255 c -4.69817,0.13116 -8.44395,3.80033 -8.5,8.5 l -0.63627,53.35087 c -0.15384,12.89908 -16.86272,9.40202 -29.76272,9.40202 h -26.9 c -4.7,0 -8.27517,3.80537 -8.5,8.5 l -1.90881,39.85693 c -0.22483,4.69462 3.8,8.5 8.5,8.5 h 16.1 c 5.5,0 39.65087,-4.40781 39.65087,1.09219 l 0.36373,53.78917 c 0,10.3 3.1,18.6 13.4,18.6 h 13.1 c 4.2,0 8.1,1.4 11.2,-0.6 0.4,-0.2 0.80036,-0.41698 1.2,-0.4 L 546.6,674.7 c 6.39423,0.27166 11.7,-5.2 11.7,-11.7 v -35.6 c 0,-12.2 -4.82539,-35.53314 7.36575,-35.99798 l 50.06171,-1.90882 c 4.69659,-0.17907 8.5,-3.8 8.5,-8.5 l 0,-26.0786 c 0,-8.9 -7.20295,-15.87098 -16.1,-16.1 l -49.43628,-1.27254 C 557.49118,537.64206 558.4,513.1 558.4,511.9 Z"
+     fill="#f9c0c0"
+     id="path1"
+     sodipodi:nodetypes="ssssssssssssccsscssssssssscs" />
+  <path
+     d="M855.4 289.3c15.1 0 29.4 6 40.2 16.8s16.8 25.1 16.8 40.2V750c0 15.1-6 29.4-16.8 40.2-10.7 10.8-25 16.8-40.2 16.8H170c-15.1 0-29.4-6-40.2-16.8S113 765.1 113 750V346.3c0-15.1 6-29.4 16.8-40.2 10.8-10.8 25.1-16.8 40.2-16.8h685.4m0-15H170c-39.6 0-72 32.4-72 72V750c0 39.6 32.4 72 72 72h685.4c39.6 0 72-32.4 72-72V346.3c0-39.6-32.4-72-72-72z"
+     fill="#999999"
+     id="path2" />
+  <path
+     d="M630.7 213.3v98.8h-236v-98.8h236m3-15h-242c-6.6 0-12 5.4-12 12v104.8c0 6.6 5.4 12 12 12h242c6.6 0 12-5.4 12-12V210.3c0-6.6-5.4-12-12-12zM275.3 259.3V274h-61.7v-14.7h61.7m3-15h-67.7c-6.6 0-12 5.4-12 12V277c0 6.6 5.4 12 12 12h67.7c6.6 0 12-5.4 12-12v-20.7c0-6.6-5.4-12-12-12zM811.8 259.3V274h-61.7v-14.7h61.7m3-15h-67.7c-6.6 0-12 5.4-12 12V277c0 6.6 5.4 12 12 12h67.7c6.6 0 12-5.4 12-12v-20.7c0-6.6-5.4-12-12-12zM513.3 409.4c40.8 0 79.1 15.9 108 44.7 28.8 28.8 44.7 67.2 44.7 108s-15.9 79.1-44.7 108c-28.8 28.8-67.2 44.7-108 44.7s-79.1-15.9-108-44.7c-28.8-28.8-44.7-67.2-44.7-108s15.9-79.1 44.7-108c28.9-28.8 67.2-44.7 108-44.7m0-15c-92.6 0-167.7 75.1-167.7 167.7s75.1 167.7 167.7 167.7S681 654.7 681 562.1s-75.1-167.7-167.7-167.7z"
+     fill="#999999"
+     id="path3" />
+  <path
+     d="M198.6 289h91.7v518h-91.7zM735.2 289h91.7v518h-91.7z"
+     fill="#F9C0C0"
+     id="path4" />
+</svg>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Clínico Dinámico</title>
+    <link rel="stylesheet" href="tratamiento.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="main-dashboard">
+        <header>
+            <h1><i class="fas fa-stethoscope"></i> Tratamiento</h1>
+            <p>Registro de Diagnósticos y Tratamientos Recientes</p>
+        </header>
+        
+        <table class="medical-table">
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Enfermedad</th>
+                    <th>Tratamiento</th>
+                    <th>Médico</th>
+                    <th>Dosis</th>
+                </tr>
+            </thead>
+            <tbody id="tratamientos-body">
+                <!-- Aquí se cargarán las filas de tratamientos.php -->
+            </tbody>
+        </table>
+
+        <div class="button-action-container">
+            <button class="btn-info-medico">
+                <a href="index1.html">
+                 Registrar Info Médico
+                 </a>
+            </button>
+        </div>
+
+    </div>
+
+<script>
+    // Al cargar la página, traer filas desde tratamientos.php
+    fetch('tratamientos.php')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('tratamientos-body').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error cargando tratamientos:', error);
+            document.getElementById('tratamientos-body').innerHTML = '<tr><td colspan="5">Error cargando datos.</td></tr>';
+        });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Citas </title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="consultasitas.css" />
+</head>
+<body>
+
+    <div class="citas-container">
+    <h1>Citas Consultadas</h1>
+    <div class="tabla-citas" id="tablaCitas">
+      <div class="fila-encabezado">
+        <span class="columna-id">ID</span>
+        <span class="columna-nombre">Nombre</span>
+        <span class="columna-fecha">Fecha</span>
+        <span class="columna-hora">Hora</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function getParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    async function cargarCita() {
+      const nombre = getParam('nombre');
+      if (!nombre) return;
+
+      try {
+        const resp = await fetch('consulta.php?nombre=' + encodeURIComponent(nombre));
+        const citas = await resp.json();
+
+        const cont = document.getElementById('tablaCitas');
+        citas.forEach(c => {
+          const fechaHora = new Date(c.Fecha);
+          const fecha = fechaHora.toLocaleDateString();
+          const hora = fechaHora.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+          const divFila = document.createElement('div');
+          divFila.className = 'fila-dato';
+          divFila.innerHTML = `<span class="columna-id">${c.Id_cita}</span>
+                               <span class="columna-nombre">${c.Nombre_paciente}</span>
+                               <span class="columna-fecha">${fecha}</span>
+                               <span class="columna-hora">${hora}</span>`;
+          cont.appendChild(divFila);
+        });
+      } catch (err) {
+        console.error('Error al cargar cita:', err);
+      }
+    }
+
+    window.onload = cargarCita;
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_nuevo.css" />
+  <title>Registro</title>
+</head>
+<body>
+  <div class="container">
+    <form id="formConsulta">
+      <h4>Bienvenido Consulta tu cita</h4>
+      <label for="mensaje">Nombre:</label>
+      <input type="text" name="mensaje" placeholder="Ingrese su nombre" required />
+      <br /><br />
+      <button type="submit">Consultar</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('formConsulta').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+      const nombre = formData.get('mensaje');
+
+      // Redirigir al HTML de resultados con parámetro GET
+      window.location.href = "Consultasita.html?nombre=" + encodeURIComponent(nombre);
+    });
+  </script>
+</body>
+</html>

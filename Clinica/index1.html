@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style2.css" />
+  <title>Registro</title>
+</head>
+<body>
+  <div class="container">
+    <form action="registrotratamiento.php" method="post">
+      <h4>Registro información Médico</h4>
+
+      <label for="Id_paciente">ID del paciente:</label>
+      <input type="text" name="Id_paciente" placeholder="Ingrese ID del paciente" required />
+      <br /><br />
+
+      <label for="Diagnostico">Enfermedad (Diagnóstico):</label>
+      <input type="text" name="Diagnostico" placeholder="Ingrese la enfermedad" required />
+      <br /><br />
+
+      <label for="Descripcion">Tratamiento (Descripción):</label>
+      <input type="text" name="Descripcion" placeholder="Ingrese descripción del tratamiento" required />
+      <br /><br />
+
+      <label for="Nom_medicamento">Nombre del medicamento:</label>
+<input type="text" name="Nom_medicamento" placeholder="Ingrese nombre del medicamento" required />
+
+
+      <label for="Dosis">Dosis:</label>
+      <input type="text" name="Dosis" placeholder="Ingrese la dosis" required />
+      <br /><br />
+
+      <button type="submit" name="Registrar">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>

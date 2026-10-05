@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plantilla de Agenda de Citas</title>
+  <link rel="stylesheet" href="citas.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Registro de Citas</h1>
+    </header>
+
+    <table class="citas-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Fecha</th>
+          <th>Horario Asignado</th>
+        </tr>
+      </thead>
+      <tbody id="citas-body">
+        <!-- con eso se rellenaran las tablas con el php-->
+      </tbody>
+    </table>
+
+    <div class="boton-container">
+      <button class="btn-registro">
+        <a href="Asistente.html">Registrar Nueva Cita</a>
+      </button>
+    </div>
+
+    <p class="nota">La tabla está vacía para ser llenada con la información de los pacientes.</p>
+  </div>
+
+  <script>
+    // esto es para cuando cargue la pagina tenga los datos del php
+    fetch('citas.php')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('citas-body').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error cargando las citas:', error);
+        document.getElementById('citas-body').innerHTML = '<tr><td colspan="4">Error cargando citas.</td></tr>';
+      });
+  </script>
+
+</body>
+</html>

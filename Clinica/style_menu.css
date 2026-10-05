@@ -1,0 +1,71 @@
+body{
+    background: rgb(209, 207, 207);
+}
+
+.doc{
+   background-color: transparent; /* Elimina el fondo del botón */
+  border: none; /* Elimina el borde del botón */
+  padding: 0; /* Elimina el espacio interno del botón */
+  cursor: pointer; /* Opcional: cambia el cursor a una mano */
+  display: flex; /* Asegura que el botón se ajuste al tamaño de la imagen */
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease; 
+  margin: 15% 10%;
+  position:absolute;
+}
+img{
+  width: auto;
+  height: 190px;
+    display: block;
+}
+.doc:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+}
+a{
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: black;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+   margin: 40% 38%;
+}
+
+.sen{
+   background-color: transparent; /* Elimina el fondo del botón */
+  border: none; /* Elimina el borde del botón */
+  padding: 0; /* Elimina el espacio interno del botón */
+  cursor: pointer; /* Opcional: cambia el cursor a una mano */
+  display: flex; /* Asegura que el botón se ajuste al tamaño de la imagen */
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease; 
+  margin: 15% 40%;
+  position:absolute;
+}
+.sen:hover{
+     cursor: pointer;
+   transform: scale(1.1);
+}
+
+.dañado{
+  background-color: transparent; /* Elimina el fondo del botón */
+  border: none; /* Elimina el borde del botón */
+  padding: 0; /* Elimina el espacio interno del botón */
+  cursor: pointer; /* Opcional: cambia el cursor a una mano */
+  display: flex; /* Asegura que el botón se ajuste al tamaño de la imagen */
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease; 
+  margin: 15% 69%;
+  position:absolute;
+}
+.dañado:hover{
+    cursor: pointer;
+   transform: scale(1.1);
+}
+
+
+

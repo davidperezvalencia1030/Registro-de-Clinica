@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Asistente.css" />
+  <title>Registro</title>
+</head>
+<body>
+      <?php include 'citas.php'; ?>
+  <div class="container">
+    <form action="procesar.php" method="post">
+      <h4>Registro de Citas</h4>
+
+      <label for="Nombre_paciente">Nombre del paciente</label>
+      <input type="text" name="Nombre_paciente" placeholder="Ingrese Nombre" required />
+      <br /><br />
+
+      <label for="Telefono">Telefono</label>
+      <input type="text" name="Telefono" placeholder="Ingrese Nombre" required />
+      <br /><br />
+
+
+      <label for="Fecha">Fecha y hora de Atencion:</label>
+      <input type="datetime-local" id="Fecha" name="Fecha" required />
+      <br /><br />
+
+      <button type="submit" name="Registrar">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>

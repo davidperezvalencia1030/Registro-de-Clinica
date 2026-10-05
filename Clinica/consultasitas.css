@@ -1,0 +1,179 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.citas-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-weight: 800;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.tabla-citas {
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 0.25fr 0.25fr;
+    border: 1px solid #cce0ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+.fila-encabezado {
+    display: contents;
+    font-weight: 800;
+    background-color: #007bff;
+    color: white;
+}
+
+.fila-encabezado span {
+    padding: 15px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #cce0ff;
+}
+
+.fila-encabezado span:last-child {
+    border-right: none;
+}
+
+/* Fila de datos */
+.fila-cita {
+    display: contents;
+}
+
+.fila-cita span {
+    background-color: #ffffff;
+    padding: 12px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    border-bottom: 1px solid #cce0ff;
+    border-right: 1px solid #cce0ff;
+}
+
+.fila-cita span:nth-child(4n) {
+    border-right: none;
+}
+
+.fila-cita:hover span {
+    background-color: #e3f2fd !important;
+    z-index: 10;
+}
+
+.columna-id {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.columna-nombre {
+    color: #4d4a4a;
+}
+
+.columna-fecha,
+.columna-hora {
+    color: #6a6a6a;
+}
+
+.tabla-citas > .fila-cita:nth-child(even) span {
+    background-color: #f8f8fc;
+}
+
+/* Fila destacada (opcional) */
+.fila-cita.destacada span {
+    background-color: #ff9800;
+    color: white;
+    font-weight: 600;
+    border-color: #e65100;
+}
+
+.fila-cita.destacada:hover span {
+    background-color: #ffb74d !important;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .tabla-citas {
+        grid-template-columns: 1fr;
+        border: none;
+    }
+
+    .fila-encabezado {
+        display: none;
+    }
+
+    .fila-cita {
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        display: block;
+    }
+
+    .fila-cita span {
+        display: block;
+        text-align: left;
+        background: none !important;
+        padding: 8px 15px;
+        border: none;
+        border-bottom: 1px dashed #ddd;
+    }
+
+    .fila-cita span:last-child {
+        border-bottom: none;
+    }
+
+    .fila-cita .columna-id:before {
+        content: "ID: ";
+        font-weight: 800;
+        color: #007bff;
+    }
+
+    .fila-cita .columna-nombre:before {
+        content: "Paciente: ";
+        font-weight: 800;
+        color: #525558;
+    }
+
+    .fila-cita .columna-fecha:before {
+        content: "Fecha: ";
+        font-weight: 800;
+    }
+
+    .fila-cita .columna-hora:before {
+        content: "Hora: ";
+        font-weight: 800;
+    }
+
+    .fila-cita.destacada {
+        border: 2px solid #e65100;
+    }
+
+    .fila-cita.destacada span {
+        color: #333;
+    }
+}
